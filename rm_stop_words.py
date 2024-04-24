@@ -1,10 +1,10 @@
-file=open("paragraphs.txt")         
 import nltk
 nltk.download('punkt')
 nltk.download('stopwords')
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize 
 #Removing stop words
+file=open("paragraphs.txt") 
 text=file.read() 
 stop_words = set(stopwords.words('english'))  
 original_text = word_tokenize(text) 
