@@ -4,7 +4,7 @@ nltk.download('punkt')
 nltk.download('stopwords')
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize 
-
+#Removing stop words
 text=file.read() 
 stop_words = set(stopwords.words('english'))  
 original_text = word_tokenize(text) 
@@ -19,7 +19,7 @@ for w in original_text:
 #print(" ".join(filtered_text))
 
 f_text = str(filtered_text)
-
+#count each word in filterd text
 def printFrequency(t):
     M = {}
     word = ""
